@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ICT Hub Team</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>ICT Hub Team</h1>
+  <p class="intro">Welcome to the internal dashboard. View our team roster or register a new employee below.</p>
+
+  <div class="table-title">Current Development Team</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Department</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alex Smith</td>
+        <td>Frontend Developer</td>
+        <td>Engineering</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>Sara Jones</td>
+        <td>UX Designer</td>
+        <td>Design</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>Mike Brown</td>
+        <td>DevOps Engineer</td>
+        <td>Engineering</td>
+        <td>On Leave</td>
+      </tr>
+      <tr>
+        <td>Emily Davis</td>
+        <td>Backend Developer</td>
+        <td>Engineering</td>
+        <td>Active</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Members</td>
+        <td>4</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Register New Employee</h2>
+  <div class="form-container">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="field-label">First Name:</div>
+        <input type="text" id="fname" name="fname">
+
+        <div class="field-label">Last Name:</div>
+        <input type="text" id="lname" name="lname">
+
+        <div class="field-label">Date of Birth:</div>
+        <input type="date" id="dob" name="dob">
+
+        <div class="field-label">Gender:</div>
+        <div class="radio-group">
+          <div class="option"><input type="radio" name="gender" value="male"> Male</div>
+          <div class="option"><input type="radio" name="gender" value="female"> Female</div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>About</legend>
+        <div class="field-label">Bio:</div>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <div class="checkbox-group">
+          <div class="option"><input type="checkbox" name="skills" value="html"> HTML</div>
+          <div class="option"><input type="checkbox" name="skills" value="css"> CSS</div>
+          <div class="option"><input type="checkbox" name="skills" value="javascript"> JavaScript</div>
+          <div class="option"><input type="checkbox" name="skills" value="angular"> Angular</div>
+          <div class="option"><input type="checkbox" name="skills" value="react"> React</div>
+          <div class="option"><input type="checkbox" name="skills" value="nodejs"> Node.js</div>
+          <div class="option"><input type="checkbox" name="skills" value="java"> Java</div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Profile Image</legend>
+        <div class="field-label">Upload Image:</div>
+        <input type="file" id="profileImage" name="profileImage">
+      </fieldset>
+
+      <button type="submit" class="register-btn">Register Employee</button>
+    </form>
+  </div>
+
+  <h2>Company Policies</h2>
+  <div class="policies">
+    <p>All employees are expected to maintain a professional work environment. Remote work is permitted up to three days per week, provided that all meetings and deadlines are met without delay.</p>
+    <p>Our code of conduct emphasizes respect, inclusivity, and collaboration. Harassment of any kind will not be tolerated, and all team members are encouraged to report violations to HR immediately.</p>
+  </div>
+
+</body>
+</html>
